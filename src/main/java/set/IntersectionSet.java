@@ -12,10 +12,8 @@ public class IntersectionSet {
         Set<Integer> secondSet = new HashSet<Integer>();
         secondSet.addAll(Arrays.asList(5, 6, 7, 8, 9));
 
-        // combining two set
-        Set<Integer> intersectionSet = new HashSet<Integer>(firstSet);
-        intersectionSet.retainAll(secondSet);
-
-        System.out.println(intersectionSet);
+        // retaining only those which are matching secondSet
+        firstSet.retainAll(secondSet);
+        System.out.println(firstSet); // [5]
     }
 }

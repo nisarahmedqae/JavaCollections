@@ -12,10 +12,8 @@ public class DifferenceSet {
         Set<Integer> secondSet = new HashSet<Integer>();
         secondSet.addAll(Arrays.asList(5, 6, 7, 8, 9));
 
-        // combining two set
-        Set<Integer> differenceSet = new HashSet<Integer>(firstSet);
-        differenceSet.removeAll(secondSet);
-
-        System.out.println(differenceSet);
+        // removing secondSet from firstSet
+        firstSet.removeAll(secondSet);
+        System.out.println(firstSet); // [1, 2, 3, 4]
     }
 }

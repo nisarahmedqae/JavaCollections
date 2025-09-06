@@ -1,5 +1,6 @@
 package map;
 
+import java.util.Collection;
 import java.util.Set;
 import java.util.TreeMap;
 
@@ -16,13 +17,13 @@ public class TreeMapConcept {
         System.out.println(map.firstKey()); //1
         System.out.println(map.lastKey()); //5
 
-        System.out.println("----------keysLessThan3-------------");
-        Set<Integer> keysLessThan3 = map.headMap(3).keySet();
-        System.out.println(keysLessThan3);
+        System.out.println("----------valueLessThan3rdKey-------------");
+        Collection<String> keysLessThan3 = map.headMap(3).values();
+        System.out.println(keysLessThan3); // [Batman, Martian Manhunter]
 
-        System.out.println("-----------keysGreaterEqual30------------");
+        System.out.println("-----------keysGreaterEqual3------------");
         Set<Integer> keysGreaterEqual3 = map.tailMap(3).keySet();
-        System.out.println(keysGreaterEqual3);
+        System.out.println(keysGreaterEqual3); // [3, 4, 5]
 
     }
 
