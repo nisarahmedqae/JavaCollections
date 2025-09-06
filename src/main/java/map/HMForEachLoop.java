@@ -6,32 +6,21 @@ import java.util.Set;
 
 public class HMForEachLoop {
 
-	public static void main(String[] args) {
-		HashMap<Integer, String> hm = new HashMap<Integer, String>();
-		hm.put(0, "hello");
-		hm.put(1, "GoodBye");
-		hm.put(42, "morning");
-		hm.put(3, "evening");
+    public static void main(String[] args) {
+        Map<Integer, String> map = new HashMap<Integer, String>();
+        map.put(1, "Batman");
+        map.put(2, "Martian Manhunter");
+        map.put(3, "Flash");
+        map.put(4, "Wonder Woman");
+        map.put(5, "Superman");
 
-		// Retrieving and printing a value
-		System.out.println(hm.get(3));
+        Set<Map.Entry<Integer, String>> entryForEach = map.entrySet();
+        for (Map.Entry<Integer, String> entry : entryForEach) {
+            Integer key = entry.getKey();
+            String value = entry.getValue();
+            System.out.println(key + " : " + value);
+        }
 
-		// Removing an element
-		hm.remove(42);
-
-		// Attempting to retrieve a removed element
-		System.out.println(hm.get(42)); // This will output 'null'
-
-		// Iterating with for each loop
-		System.out.println("-------------Iterating with for each loop----------------");
-		Set<Map.Entry<Integer, String>> entryForEach = hm.entrySet();
-
-		for (Map.Entry<Integer, String> entry : entryForEach) {
-			Integer key = entry.getKey();
-			String value = entry.getValue();
-			System.out.println(key + " : " + value);
-		}
-
-	}
+    }
 
 }
