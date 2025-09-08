@@ -6,7 +6,7 @@ import java.util.PriorityQueue;
 public class IterateQueue {
 
 	public static void main(String[] args) {
-		PriorityQueue<Integer> priorityQueue = new PriorityQueue<Integer>();
+		PriorityQueue<Integer> priorityQueue = new PriorityQueue<>();
 		priorityQueue.add(1);
 		priorityQueue.add(2);
 		priorityQueue.offer(3);

@@ -8,8 +8,8 @@ public class ListMethods {
 
 	@SuppressWarnings("unchecked")
 	public static void main(String[] args) {
-		List<String> list1 = new ArrayList<String>(Arrays.asList("java", "python", "c#"));
-		List<String> list2 = new ArrayList<String>(Arrays.asList("js", "typescript", "ruby"));
+		List<String> list1 = new ArrayList<>(Arrays.asList("java", "python", "c#"));
+		List<String> list2 = new ArrayList<>(Arrays.asList("js", "typescript", "ruby"));
 
 		list1.addAll(2, list2);
 		System.out.println(list1);

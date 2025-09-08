@@ -15,7 +15,7 @@ public class RetainCommonEle {
         System.out.println(lang1); //[JAVA, Python]
 
         // With Singleton
-        List<String> nameList = new ArrayList<String>(
+        List<String> nameList = new ArrayList<>(
                 Arrays.asList("Naveen", "Tom", "Peter", "Steve", "Lisa", "Tom"));
         nameList.retainAll(Collections.singleton("Tom"));
         System.out.println(nameList); //[Tom, Tom]

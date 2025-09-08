@@ -7,7 +7,7 @@ import java.util.Set;
 public class HMForEachLoop {
 
     public static void main(String[] args) {
-        Map<Integer, String> map = new HashMap<Integer, String>();
+        Map<Integer, String> map = new HashMap<>();
         map.put(1, "Batman");
         map.put(2, "Martian Manhunter");
         map.put(3, "Flash");

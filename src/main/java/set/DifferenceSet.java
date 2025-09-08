@@ -7,9 +7,9 @@ import java.util.Set;
 public class DifferenceSet {
 
     public static void main(String[] args) {
-        Set<Integer> firstSet = new HashSet<Integer>(Arrays.asList(1, 2, 3, 4, 5));
+        Set<Integer> firstSet = new HashSet<>(Arrays.asList(1, 2, 3, 4, 5));
 
-        Set<Integer> secondSet = new HashSet<Integer>();
+        Set<Integer> secondSet = new HashSet<>();
         secondSet.addAll(Arrays.asList(5, 6, 7, 8, 9));
 
         // removing secondSet from firstSet

@@ -5,7 +5,7 @@ import java.util.*;
 public class LinkedListMethods {
 
     public static void main(String[] args) {
-        LinkedList<String> names = new LinkedList<String>(Arrays.asList("Tom", "Naveen", "Lisa"));
+        LinkedList<String> names = new LinkedList<>(Arrays.asList("Tom", "Naveen", "Lisa"));
 
         names.add(3, "Steve");
         names.add(0, "Ram");

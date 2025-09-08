@@ -7,7 +7,7 @@ public class SynchronizedArrayList {
 	public static void main(String[] args) {
 
 		// Thread safe variant of ArrayList
-		CopyOnWriteArrayList<String> empList = new CopyOnWriteArrayList<String>();
+		CopyOnWriteArrayList<String> empList = new CopyOnWriteArrayList<>();
 		empList.add("Tom");
 		empList.add("Steve");
 		empList.add("Naveen");
